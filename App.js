@@ -1,13 +1,21 @@
 import React from "react";
-import{View,Text} from 'react-native';
+import{View,Text, TextInput,TouchableOpacity, StyleSheet, SafeAreaView} from 'react-native';
+import api from './src/services/api';
 
 export default function App(){
   return(
-    <View>
+    <SafeAreaView>
       <Text>
         Primeiro App, primeiro Commit
       </Text>
-    </View>
+    </SafeAreaView>
 
   );
 }
+
+const style = StyleSheet.create.apply({
+  container: {
+    flex:1,
+  }
+
+})

@@ -19,6 +19,21 @@ export default function App(){
 
       </View>
       
+      <View style={style.areaBtn}>
+        <TouchableOpacity style={[style.botao,{backgroundColor: '#1d75cd'}]}>
+          <Text style ={style.botaoText}>
+            Buscar
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[style.botao, {backgroundColor: 'red'}]}>
+          <Text style ={style.botaoText}>
+            Limpar
+          </Text>
+        </TouchableOpacity>
+
+      </View>
+
     </SafeAreaView>
 
   );
@@ -45,6 +60,23 @@ const style = StyleSheet.create({
     padding: 10,
     fontSize: 18,
     tintColor: 'black'
+  },
+  areaBtn:{
+    alignItems: 'center',
+    flexDirection: 'row',
+    marginTop:15,
+    justifyContent: 'space-around'
+  },
+  botao:{
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 15,
+    borderRadius:5,
+  },
+  botaoText:{
+    fontSize:18,
+    color:  'black'
   }
 
 })

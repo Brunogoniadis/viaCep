@@ -34,6 +34,14 @@ export default function App(){
 
       </View>
 
+      <View style={style.resultado}>
+        <Text style={[style.itemText, {mar:15}]}>CEP:</Text>
+        <Text style={style.itemText}>Logradouro:</Text>
+        <Text style={style.itemText}>Bairro:</Text>
+        <Text style={style.itemText}>Cidade:</Text>
+        <Text style={style.itemText}>Estado</Text>
+      </View>
+
     </SafeAreaView>
 
   );
@@ -76,7 +84,16 @@ const style = StyleSheet.create({
   },
   botaoText:{
     fontSize:18,
-    color:  'black'
+    color:  'white'
+  },
+  resultado:{
+    
+    justifyContent:'center',
+    alignItems: 'center'
+  },
+  itemText:{
+    fontSize: 22,
+    color: 'black'
   }
 
 })
